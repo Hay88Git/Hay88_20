@@ -12,10 +12,12 @@ var newImageSlide = [
     "./img/1.jpg",
     "./img/2.jpg"
 ];
+
 var slide = document.querySelectorAll(".main_slide img");
 slide.forEach(function(img, index) {
     img.src = newImageSlide[index];
 });
+
 $('.owl-carousel').owlCarousel({
     loop: true,
     autoplay: true,
